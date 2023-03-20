@@ -1,0 +1,41 @@
+public class Calculator{
+  /*this is a calculator, give it two numbers
+  and it will add, subtract, multiply, divide,
+  or modulo. */
+  public void Calculator(){
+    //creates the object
+  }
+
+  public int add(int a, int b){
+    //addition
+    return a + b;
+  }
+
+  public int subtract(int a, int b){
+    //subtraction
+    return a - b;
+  }
+
+  public int multiply(int a, int b){
+    //multiplication
+    return a * b;
+  }
+
+  public int divide(int a, int b){
+    //division
+    return a / b;
+  }
+
+  public int modulo(int a, int b){
+    //modulo
+    return a % b;
+  }
+
+  public static void main(String[] args){
+    Calculator myCalculator = new Calculator();
+    System.out.println(myCalculator.add(5, 7));
+    System.out.println(myCalculator.subtract(45, 11));
+
+  }
+
+}
