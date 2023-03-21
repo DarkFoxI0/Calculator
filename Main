@@ -6,22 +6,22 @@ public class Calculator{
     //creates the object
   }
 
-  public int add(double a, double b){
+  public double add(double a, double b){
     //addition
     return a + b;
   }
 
-  public int subtract(double a, double b){
+  public double subtract(double a, double b){
     //subtraction
     return a - b;
   }
 
-  public int multiply(double a, double b){
+  public double multiply(double a, double b){
     //multiplication
     return a * b;
   }
 
-  public int divide(double a, double b){
+  public double divide(double a, double b){
     //division
     return a / b;
   }
