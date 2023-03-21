@@ -1,27 +1,27 @@
 public class Calculator{
-  /*this is a calculator, give it two numbers
-  and it will add, subtract, multiply, divide,
-  or modulo. */
+  /* This is a calculator, give it two numbers and it will add, subtract, multiply, divide, or modulo. 
+  Modulo will not work with decimals, numbers larger than 2147483647, or numbers less than -2147483647 */
+  
   public void Calculator(){
     //creates the object
   }
 
-  public int add(int a, int b){
+  public int add(double a, double b){
     //addition
     return a + b;
   }
 
-  public int subtract(int a, int b){
+  public int subtract(double a, double b){
     //subtraction
     return a - b;
   }
 
-  public int multiply(int a, int b){
+  public int multiply(double a, double b){
     //multiplication
     return a * b;
   }
 
-  public int divide(int a, int b){
+  public int divide(double a, double b){
     //division
     return a / b;
   }
@@ -33,9 +33,11 @@ public class Calculator{
 
   public static void main(String[] args){
     Calculator myCalculator = new Calculator();
-    System.out.println(myCalculator.add(5, 7));
-    System.out.println(myCalculator.subtract(45, 11));
-
+    System.out.println(myCalculator.add(1, 1));
+    System.out.println(myCalculator.subtract(1, 1));
+    System.out.println(myCalculator.multiply(1, 1));
+    System.out.println(myCalculator.divide(1, 1));
+    System.out.println(myCalculator.modulo(1, 1));
   }
 
 }
