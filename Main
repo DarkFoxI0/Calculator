@@ -1,6 +1,9 @@
 public class Calculator{
-  /* This is a calculator, give it two numbers and it will add, subtract, multiply, divide, or modulo. 
-  Modulo will not work with decimals, numbers larger than 2147483647, or numbers less than -2147483647 */
+  /* This is a calculator, give it two numbers and it will add, subtract, multiply, divide, or modulo using the command System.out.println(myCalculator.<operation>(a, b));
+  Modulo will not work with decimals, numbers larger than 2147483647, or numbers less than -2147483647.
+  The variable storedNumber stores the value of the previous calculation and can be used in the place of a number in the operation (ex. , with the exception of modulo. */
+  
+  static double storedNumber;
   
   public void Calculator(){
     //creates the object
@@ -8,21 +11,25 @@ public class Calculator{
 
   public double add(double a, double b){
     //addition
+    storedNumber = a + b;
     return a + b;
   }
 
   public double subtract(double a, double b){
     //subtraction
+    storedNumber = a - b;
     return a - b;
   }
 
   public double multiply(double a, double b){
     //multiplication
+    storedNumber = a * b;
     return a * b;
   }
 
   public double divide(double a, double b){
     //division
+    storedNumber = a / b;
     return a / b;
   }
 
@@ -32,12 +39,23 @@ public class Calculator{
   }
 
   public static void main(String[] args){
+    //double storedNumber;
     Calculator myCalculator = new Calculator();
+    
     System.out.println(myCalculator.add(1, 1));
+    //addition
+    
+    System.out.println(myCalculator.add(storedNumber, 1));
+    //addition (with stored number)
+    
     System.out.println(myCalculator.subtract(1, 1));
+    //subtraction
     System.out.println(myCalculator.multiply(1, 1));
+    //multiplication
     System.out.println(myCalculator.divide(1, 1));
+    //division
     System.out.println(myCalculator.modulo(1, 1));
+    //modulo (not double type)
   }
 
 }
